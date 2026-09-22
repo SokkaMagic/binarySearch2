@@ -7,13 +7,12 @@ def find_closest(data, target):
     while low <= high:
         mid = (low + high) // 2
         if data[mid] == target:
-            return mid  # found
+            return data[mid]  # found
         elif data[mid] < target:
             low = mid + 1  # target is in the right half
         else:
             high = mid - 1  # target is in the left half
     return data[mid]
-    
 
 # Exercise 2
 def integer_sqrt(n):
