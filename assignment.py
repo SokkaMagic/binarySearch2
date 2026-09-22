@@ -13,6 +13,7 @@ def find_closest(data, target):
         else:
             high = mid - 1  # target is in the left half
     return data[mid]
+    
 
 # Exercise 2
 def integer_sqrt(n):
